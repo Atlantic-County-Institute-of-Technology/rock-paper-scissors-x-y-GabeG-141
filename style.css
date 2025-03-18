@@ -1,9 +1,11 @@
 .BC{
     position: absolute;
     align-items: center;
-    border: 5px black;
+    border: 5px rgb(255, 0, 0);
     flex-direction: row;
     display: flex;
+    top: 200px;
+    left: 770px;
 }
 
 #rock{
@@ -39,3 +41,40 @@ margin-left: auto;
 margin-right: auto;
 flex-direction: row;
 }
+
+#X{
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    align-items: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: row;
+    }
+
+#Y{
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    align-items: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: row;
+    }
+    #VS {
+        position: absolute;
+        border-radius: 25px;
+        border: 2px solid #73AD21;
+        padding: 20px; 
+        width: 375px;
+        height: 150px;  
+       left: 747px; 
+        top: 300px;
+      }
+    #VS_Logo {
+        position: absolute;
+        top: 375px;
+        left: 930px;
+    }
