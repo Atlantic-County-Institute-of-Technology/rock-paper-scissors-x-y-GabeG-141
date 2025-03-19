@@ -78,3 +78,9 @@ flex-direction: row;
         top: 375px;
         left: 930px;
     }
+
+    #Computer {
+        position: absolute;
+        top: 335px;
+        left: 1000px;
+    }
