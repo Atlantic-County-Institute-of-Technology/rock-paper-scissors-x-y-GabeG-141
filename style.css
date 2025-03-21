@@ -8,6 +8,10 @@
     left: 770px;
 }
 
+.unhideF {
+    visibility: visible;
+}
+
 #rock{
 width: 75px;
 height: 75px;
@@ -90,3 +94,53 @@ flex-direction: row;
     left: 750px;
     top: 500px;
 }
+
+#rockD{
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+    
+    #paperD{
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+position: absolute;
+    }
+    
+    #scissorsD{
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+position: absolute;
+    }
+    
+    #gtx970D{
+        width: 75px;
+        height: 75px;
+        border-radius: 50%;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+position: absolute;
+        }
+    
+    #nokiaD{
+        position: absolute;
+        width: 75px;
+        height: 75px;
+        border-radius: 50%;
+        left: 800px;
+        top: 350px;
+    }
