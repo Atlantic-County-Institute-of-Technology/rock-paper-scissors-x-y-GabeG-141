@@ -3,38 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RPSXY</title>
+    <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="script.js">
 </head>
 <body>
-    <section class="game">
-    <div class="BC" style="width: 375px; margin: 0 auto;">
-        <button class="rock" id="rock"><img src="assets/rock.png" alt="rock" width="50px" height="50px" onclick=""></button>
-        <button class="paper" id="paper"><img src="assets/paper.png" alt="paper" width="50px" height="50px"></button>
-        <button class="scissors" id="scissors"><img src="assets/scissors.png" alt="scissors" width="50px" height="50px"></button>
-        <button class="gtx970" id="gtx970"><img src="assets/GTX970.png" alt="GTX970" width="55px" height="50px"></button>
-        <button class="nokia" id="nokia"><img src="assets/nokia.png" alt="nokia_phone" width="60px" height="60px"></button>
-    </div>
-    <div id="VS"> </div>
-        <div id="VS_Logo"><img src="assets/Street_Fighter_VS_logo.jpeg" alt="vs" width="50px" height="50px"> </div>
-<div class="Computer" id="Computer"><img src="assets/Computer.png" alt="Computer" width="125px" height="125px"></div>
-<div>
-<button>Reset Game</button>
-<button>Reset Score</button>
-<h2 class="Player_score" id="PS"></h2>
-<h2 class="Computer_score" id="CS"></h2>
+
+<h1>Rock - Paper - scissors</h1>
+<div class="choices">
+    <button  onclick="playGame('rock')">👊</button>
+    <button  onclick="playGame('paper')">🤚</button>
+    <button  onclick="playGame('scissors')">✂️</button>
+    <button id="gtx970" onclick="playGame('gtx970')"><img src="assets/GTX970.png" alt="gtx970" width="200px" height="130px"  ></button>
+    <button onclick="playGame('nokia')"><img src="assets/nokia.png" alt="nokia" height="125px"></button>
 </div>
-<h2 class="winner_box" id="WB"></h2>
-    </section>
-    <img class="rock" id="rockD"><img src="assets/rock.png" alt="rock" width="50px" height="50px" onclick=""></img>
-    <img class="paper" id="paperD"><img src="assets/paper.png" alt="paper" width="50px" height="50px"></img>
-    <img class="scissors" id="scissorsD"><img src="assets/scissors.png" alt="scissors" width="50px" height="50px"></img>
-    <img class="gtx970" id="gtx970D"><img src="assets/GTX970.png" alt="GTX970" width="55px" height="50px"></img>
-    <img  class="nokia" id="nokiaD"><img src="assets/nokia.png" alt="nokia_phone" width="60px" height="60px"></img>
+
+<div id="playerDisplay">PLAYER:</div>
+<div id="computerDisplay">COMPUTER:</div>
+<div id="resultDisplay"></div>
+
+<div class="scoreDisplay">Player Score:
+    <span id="playerScoreDisplay">0</span>
+</div>
+
+<div class="scoreDisplay">Computer Score:
+    <span id="computerScoreDisplay">0</span>
+</div>
+<div><button id="Reset">Reset</button></div>
+<p>Rock BEATS Scissors and GTX970 </p>
+<p> Paper BEATS Rock and Nokia </p>
+<p> Scissors BEATS Paper and Nokia </p>
+<p> GTX970 BEATS Paper and Scissors </p>
+<p> Nokia BEATS GTX970 and Rock </p>
+</p>
 
 
 
-    
+<script src="script.js" ></script>
+
 </body>
 </html>
