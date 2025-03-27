@@ -1,3 +1,4 @@
+//* To "connect" JS to HTML and CSS
 const choices = ['rock', 'paper', 'scissors','gtx970','nokia'];
 const playerDisplay = document.getElementById("playerDisplay");
 const computerDisplay = document.getElementById("computerDisplay");
@@ -14,6 +15,7 @@ function playGame(playerChoice){
     const computerChoice = choices[Math.floor(Math.random() * 5)];
     let result = "";
 
+    //* This decides what wins against what
     if(playerChoice === computerChoice){
         result = "IT'S A TIE!"
     }
@@ -36,13 +38,13 @@ function playGame(playerChoice){
                 break;
             }
     }
-
+    //* Score tracker
     playerDisplay.textContent = `PLAYER: ${playerChoice}`;
     computerDisplay.textContent = `Computer: ${computerChoice}`;
     resultDisplay.textContent = result;
 
 resultDisplay.classList.remove("greenText", "redText");
-
+//* Text that displays if you win / lose and it's color
     switch(result){
 case "YOU WIN!":
 resultDisplay.classList.add("greenText");
@@ -55,6 +57,7 @@ computerScore++;
 computerScoreDisplay.textContent = computerScore;
 break;
     }
+    //* Reset button code / function
 function resetGame(){
     playerScore = 0;
     computerScore = 0;
