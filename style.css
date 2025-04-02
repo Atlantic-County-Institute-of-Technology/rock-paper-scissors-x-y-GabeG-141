@@ -50,3 +50,8 @@ h1{
 
     object-fit: scale-down none;
 }
+
+.CT {
+    position: absolute;
+    flex-direction: row-reverse;
+}
