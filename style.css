@@ -29,8 +29,24 @@ h1{
     flex-direction: column;
 }
 /* Rest effects the basic text in the game */
-#playerDisplay, #computerDisplay{
+#playerDisplayT{
     font-size: 2.5rem;
+    left: -600px;
+    position: absolute;
+} #computerDisplayT{
+    font-size: 2.5rem;
+    position: absolute;
+    left: 350px;
+}
+#playerDisplay{
+    font-size: 2.5rem;
+    left: -600px;
+    position: absolute;
+} #computerDisplay{
+    font-size: 2.5rem;
+    position: absolute;
+    left: 350px;
+    top: 30px;
 }
 #resultDisplay{
     font-size: 5rem;
@@ -53,5 +69,11 @@ h1{
 
 .CT {
     position: absolute;
-    flex-direction: row-reverse;
+    flex-direction: column;
+    top: 650px;
+}
+
+.choice_image {
+    height: 60px;
+    width: 60px;
 }

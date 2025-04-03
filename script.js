@@ -6,6 +6,9 @@ const resultDisplay = document.getElementById("resultDisplay");
 const playerScoreDisplay = document.getElementById("playerScoreDisplay");
 const computerScoreDisplay = document.getElementById("computerScoreDisplay");
 const resetButton = document.getElementById("Reset")
+const choice_icons = ['👊','🤚','✂️','assets/GTX970.png','assets/nokia.png']
+const playerChoice = document.getElementById('playerChoice');
+const computer_choice = document.getElementById('computerChoice');
 let playerScore = 0;
 let computerScore = 0;
 
@@ -36,11 +39,30 @@ function playGame(playerChoice){
             case "nokia":
                 result = (computerChoice === "gtx970" || computerChoice === "rock") ? "YOU WIN!" : "YOU LOSE!";
                 break;
+
             }
     }
+
+function updateUI(user
+    )
+
+    const choiceEmojis = {
+
+        rock: "👊";
+
+        paper: "🤚";
+
+        scissors: "✂️";
+
+        gtx970: "assets/GTX970.png";
+
+        nokia: "assets/nokia.png";
+
+    }
+
     //* Score tracker
-    playerDisplay.textContent = `PLAYER: ${playerChoice}`;
-    computerDisplay.textContent = `Computer: ${computerChoice}`;
+    playerDisplay.textContent = `${playerChoice}`;
+    computerDisplay.textContent = `${computerChoice}`;
     resultDisplay.textContent = result;
 
 resultDisplay.classList.remove("greenText", "redText");
@@ -57,6 +79,31 @@ computerScore++;
 computerScoreDisplay.textContent = computerScore;
 break;
     }
+    function updateUI(player, cpu, winner) {
+        result.textContent = winner;
+        
+        // empty out any images stored previously
+        playerChoice.innerHTML = '';
+        computerChoice.innerHTML = '';
+        
+        // create a new image, set the source to the player's
+        // choice, format the size, then append to player_choice
+        let p_img = new Image();
+        p_img.src = choice_icons[player-1];
+        p_img.classList.add('choice_image'); 
+        playerChoice.appendChild(p_img); 
+    
+        // create a new image, set the source to the cpu's
+        // choice, format the size, then append to computer_choice
+        let c_img = new Image();
+        c_img.src = choice_icons[cpu-1];
+        c_img.classList.add('choice_image');
+        computer_choice.appendChild(c_img);
+    
+        player_score.innerText = player_score_val;
+        computer_score.innerText = computer_score_val;
+    }
+    
     //* Reset button code / function
 function resetGame(){
     playerScore = 0;
