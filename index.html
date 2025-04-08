@@ -4,32 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- links css to html-->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+    <!-- The choice buttons linked to an on click function-->
 <h1>Rock - Paper - scissors</h1>
-<!-- The choices on screen -->
 <div class="choices">
-    <button  onclick="playGame('rock')">👊</button>
-    <button  onclick="playGame('paper')">🤚</button>
-    <button  onclick="playGame('scissors')">✂️</button>
+    <button id="rock" onclick="playGame('rock')"><img src="assets/rock.png" alt="rock" width="200px" ></button>
+    <button id="paper" onclick="playGame('paper')"><img src="assets/paper.png" alt="paper" width="200px" height="130px"></button>
+    <button id="scissors" onclick="playGame('scissors')"><img src="assets/scissors.png" alt="scissors" width="200px" height="130px"></button>
     <button id="gtx970" onclick="playGame('gtx970')"><img src="assets/GTX970.png" alt="gtx970" width="200px" height="130px"  ></button>
-    <button onclick="playGame('nokia')"><img src="assets/nokia.png" alt="nokia" height="125px"></button>
+    <button id="nokia" onclick="playGame('nokia')"><img src="assets/nokia.png" alt="nokia" height="125px"></button>
 </div>
-<!-- Choice Tracker -->
-<div class="CT">
-<div id="playerDisplayT">PLAYER:</div>
-<div id="playerDisplay"><p>PO</p></div>
-<div id="computerDisplayT">COMPUTER:</div>
-<div id="computerDisplay">CO</div>
+<!-- player score and display-->
+<div id="playerDisplay">PLAYER:</div>
+<div id="computerDisplay">COMPUTER:</div>
 <div id="resultDisplay"></div>
-</div>
 
-    </div>
-</div>
-
-<!-- Score Tracker -->
 <div class="scoreDisplay">Player Score:
     <span id="playerScoreDisplay">0</span>
 </div>
@@ -37,20 +30,19 @@
 <div class="scoreDisplay">Computer Score:
     <span id="computerScoreDisplay">0</span>
 </div>
-<div><button id="Reset">Reset Scores</button></div>
-<!-- Basic instructions for the player -->
+
+<!-- instructions to help user-->
+
+<div><button id="Reset">Reset</button></div>
 <p>Rock BEATS Scissors and GTX970 </p>
-<p> Paper BEATS Rock and Nokia </p>
-<p> Scissors BEATS Paper and Nokia </p>
-<p> GTX970 BEATS Paper and Scissors </p>
-<p> Nokia BEATS GTX970 and Rock </p>
+    <p>Paper BEATS Rock and Nokia </p>
+    <p>Scissors BEATS Paper and Nokia </p>
+    <p>GTX970 BEATS Paper and Scissors </p>
+    <p>Nokia BEATS gtx970 and rock </p>
 </p>
 
 
-
-
-
-
+<!-- links js to html-->
 <script src="script.js" ></script>
 
 </body>
